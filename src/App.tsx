@@ -1,11 +1,15 @@
-import { Balance } from "./components/Balance"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+
+import { AccountPage } from "./pages/Account"
 
 function App() {
   return (
     <>
-      <div>
-        <Balance amount={900} />
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<AccountPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

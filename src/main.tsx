@@ -5,7 +5,7 @@ import App from "./App.tsx"
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <div>
+    <div className="container mx-auto p-4">
       <App />
     </div>
   </StrictMode>
